@@ -1,0 +1,159 @@
+.CampaignsBox {
+    width: 100%;
+}
+
+.CampaignsBtn {
+    height: 40px;
+    width: 200px;
+    margin-bottom: 20px;
+    
+    border-radius: 20px;
+    border: 2px solid #00cec9;
+    outline: none;
+    background-color: #fbfaf8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #00cecb60;
+
+    transition: all 0.2s;
+}
+.CampaignsBtn:hover {
+    background-color: #00cec9;
+    color: #fbfaf8;
+    box-shadow: 3px 3px 6px #00cecb56;
+}
+
+.Campaigns li {
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.CampaignCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 200px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px #77777746;
+    background-color: #fbfaf8;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+.CampaignCard:hover {
+    box-shadow: 5px 5px 10px #00cecb60;
+}
+
+.CardTitle {
+    flex: 0 1 50%;
+    padding: 20px;
+    font-size: 14px;
+    text-align: start;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.CardImg {
+    flex: 0 1 30%;
+    height: 120px;
+}
+.CardImg img {
+    height: 100%;
+}
+
+.ModalTitle {
+    border-bottom: 2px solid #00cec9;
+    font-weight: bold;
+    color: #00cec9;
+    padding: 10px 10px 20px 10px;
+}
+.ModalContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Image {
+    flex: 0 0 60%;
+}
+.Text {
+    flex: 0 0 40%;
+    margin-top: 40px;
+}
+.Text div {
+    padding: 0 10px 20px 10px;
+    text-align: start;
+}
+.Text .Date {
+    font-size: 16px;
+    opacity: 0.5;
+    color: #00cec9;
+}
+.Text .Description {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1250px) {
+    .CampaignsBox {
+        width: 95%;
+    }
+    .CardTitle {
+        font-size: 9px;
+    }
+    .CardImg{
+        height: 80px;
+    }
+    .CampaignCard {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .CampaignsBox {
+        width: 300px;
+    }
+    .CampaignsBtn {
+        height: 40px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .CampaignsBtn {
+        width: 170px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .CampaignsBtn {
+        height: 30px;
+        width: 150px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ModalContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .Image{
+        flex: none;
+    }
+    .Text {
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .CampaignsBtn {
+        height: 30px;
+        width: 130px;
+    }
+}

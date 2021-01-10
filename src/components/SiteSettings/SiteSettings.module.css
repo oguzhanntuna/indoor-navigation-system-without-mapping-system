@@ -1,0 +1,50 @@
+.IconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IconBox img {
+    height: 30px;
+    cursor: pointer;
+    color: blue;
+}
+
+.Container h3 {
+    width: 100%;
+    color: #00cec9;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #00cec9;
+}
+.LanguageSettings {
+    width: 100%;
+    padding-top: 15px;
+}
+.LanguageSettings h4 {
+    color: #272727;
+    padding-bottom: 15px;
+}
+.LanguageSettings ul li {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fbfaf8;
+    background-color: #00cec9;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+.LanguageSettings ul li:hover {
+    background-color: #009795;
+}
+
+@media screen and (max-width: 650px) {
+    .Container {
+        font-size: 90%;
+    }
+    .LanguageSettings ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}

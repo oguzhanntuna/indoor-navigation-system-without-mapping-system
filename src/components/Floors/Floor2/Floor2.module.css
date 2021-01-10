@@ -1,0 +1,41 @@
+.ImageContainer {
+    height: 580px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImageContainer img {
+    height: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    .ImageContainer {
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .ImageContainer {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .ImageContainer {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ImageContainer {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ImageContainer {
+        height: 300px;
+    }
+}

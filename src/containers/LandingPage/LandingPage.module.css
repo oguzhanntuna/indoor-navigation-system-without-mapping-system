@@ -1,0 +1,40 @@
+.LandingPage {
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around; 
+
+}
+
+.Aside {
+    width: 100%;
+    flex: 0 0 30%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main {
+    width: 100%;
+    flex: 0 0 60%;
+}
+
+@media screen and (max-width: 1025px) {
+    .LandingPage {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "floors" "campaigns" ;
+
+        margin-top: 15px;
+    }
+    .Aside {
+        grid-area: campaigns;
+    }
+    .Main {
+        grid-area: floors;
+        margin-bottom: 40px;
+    }
+}

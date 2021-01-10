@@ -1,0 +1,32 @@
+.NavigationItems {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NavigationItems ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.NavigationItems h2 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+@media screen and (max-width: 550px) {
+    .NavigationItems h2 {
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .NavigationItems h2 {
+        letter-spacing: 0;
+    }
+}

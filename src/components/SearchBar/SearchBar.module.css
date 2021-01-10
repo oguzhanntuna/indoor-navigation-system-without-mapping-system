@@ -1,0 +1,108 @@
+.SearchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SearchBar input {
+    width: 400px;
+    height: 30px;
+    padding: 20px;
+
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+    border: 2px solid #00cec9;
+    background-color: #fbfaf8;
+    box-shadow: 5px 5px 10px #00cecb60;
+
+    transition: all 0.2s;
+
+}
+.SearchBar input:hover {
+    box-shadow: 3px 3px 5px #00cecb60;
+}
+
+.Options {
+    width: 360px;
+    height: 200px;
+    position: absolute;
+    top: 195px;
+
+    background-color: #fbfaf8d0;
+    border: 2px solid #00cec9;
+    border-top: none;
+    overflow-y: scroll;
+}
+.Options ul {
+    list-style: none;  
+}
+.Options li {
+    margin: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.Options li:hover {
+    background-color: #00cec9;
+    color: #fbfaf8;
+}
+
+.ShopInfo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ShopInfo span {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .SearchBar input {
+        width: 450px;
+    }
+    .Options {
+        top: 170px;
+        width: 410px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .SearchBar input {
+        width: 400px;  
+    }
+    .Options {
+        width: 360px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SearchBar input {
+        width: 300px;
+        padding: 15px; 
+    }
+    .Options {
+        top: 160px;
+        width: 270px;
+        height: 160px;
+    }
+    .ShopInfo span {
+        font-size: 80%;
+    }
+    .Options li {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .SearchBar input {
+        width: 250px; 
+    }
+    .Options {
+        width: 210px;
+        height: 140px;
+    }
+}
+
